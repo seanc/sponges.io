@@ -1,0 +1,85 @@
+#projects
+	background: #f7f7f7
+	padding: 30px 0
+	
+	.section-title
+		margin-bottom: 0px
+	
+	.projects
+			
+		.gh-project
+			margin-top: 40px
+		
+			.project-title
+				display: block
+				font:
+					weight: 700
+					size: 21px
+				color: $purple
+				margin: 10px 0
+				
+				&:hover, &:active
+					color: shade($purple, 30%)
+					text-decoration: underline
+					
+			.description
+				font-size: 13px
+				color: #666666
+				margin: 0 0 5px
+				
+			.gh-info
+				display: flex
+				justify-content: space-between
+				
+				.update
+					font-size: 11px
+					color: #888888
+					margin: 0
+					
+				.gh-icons
+					font-size: 11px
+					
+					.stars,
+					.forks
+						margin-left: 15px
+						background: #eeeeee
+						border: 1px solid #dddddd
+						padding: 3px 5px
+						padding-right: 0
+						color: #888888
+						
+						.fa
+							padding: 3px
+							border-left: 1px solid #dddddd
+							margin-left: 5px
+							vertical-align: middle
+						
+						.fa-star
+							color: #ffba00
+							font-size: 15px
+							
+						.fa-code-fork
+							color: rgba(0, 0, 0, 0.7)
+							font-size: 15px
+							padding: 0 5px
+		
+	.cta
+		display: block
+		margin: 0
+		padding: 70px 0
+		text-align: center
+		
+		a
+			color: tint($purple, 15%)
+			padding: 15px 100px
+			border: 1px solid tint($purple, 15%)
+			border-radius: 9px
+			transition: all 0.2s ease-in-out
+			font:
+				size: 18px
+				weight:	300
+				
+			&:hover
+				color: white
+				background: shade($purple, 15%)
+				border-color: shade($purple, 15%)

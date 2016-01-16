@@ -1,0 +1,6 @@
+name: sponges.io
+markdown: redcarpet
+exclude: ["node_modules",
+	"gulpfile.js",
+	"package.json",
+	"README.md"]
