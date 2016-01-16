@@ -1,6 +1,7 @@
 $(function() {
   smoothScroll(300);
   mobileNav();
+  $().loadRepositories('sponges');
 });
 
 
