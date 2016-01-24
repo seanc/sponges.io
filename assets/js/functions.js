@@ -1,7 +1,12 @@
 $(function() {
   smoothScroll(300);
   mobileNav();
+<<<<<<< HEAD
   $().loadRepositories('sponges');
+=======
+  modalOpen();
+  modalClose();
+>>>>>>> master
 });
 
 
@@ -16,7 +21,7 @@ function mobileNav() {
 
 
 
-function smoothScroll (duration) {
+function smoothScroll(duration) {
 	$('a[href^="#"]').on('click', function(event) {
 
 	    var target = $( $(this).attr('href') );
@@ -27,5 +32,24 @@ function smoothScroll (duration) {
 	            scrollTop: target.offset().top
 	        }, duration);
 	    }
+	});
+}
+
+function modalOpen() {
+	
+	$('a[href^="#"]').on('click', function(event) {
+
+	    var target = $( $(this).attr('href') );
+	    $(target).css('display', 'flex');
+		return false;
+		
+	    
+	});
+}
+
+function modalClose() {
+	$('.close').click(function() {
+		$('.modal-overlay').hide();
+		return false;
 	});
 }

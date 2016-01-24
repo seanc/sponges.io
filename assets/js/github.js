@@ -9,7 +9,11 @@ $.fn.loadRepositories = function(username) {
     $.githubUser(username, function(data) {
         var repos = data.data; // JSON Parsing 
         
+<<<<<<< HEAD
         var id = -1;
+=======
+        var id = 0;
+>>>>>>> master
         $(repos).each(function() {
            /*
  if (this.name != (username.toLowerCase()+'.github.com')) {

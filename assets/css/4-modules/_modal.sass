@@ -1,0 +1,52 @@
+.modal-overlay
+	position: fixed
+	display: none
+	+size(100%)
+	background: fade-out(#120C1D, 0.4)
+	justify-content: center
+	align-items: center
+	z-index: 99
+	top: 0
+	transition: 0.3s all ease-in-out
+	
+	.modal
+		max-width: 640px
+		background: white
+		transition: 0.3s all ease-in-out
+		margin: 0 15px
+		text-align: center
+		border-radius: 5px
+		
+		.title
+			margin: 30px 0
+			letter-spacing: 2px
+			font:
+				size: 40px
+				weight: 400
+			
+		.description
+			font-size: 20px
+			line-height: 1.2
+			margin: 15px 10%
+			text-align: center
+			letter-spacing: 0.5px
+		
+		.cta
+			display: block
+			margin: 50px 0
+			
+			a
+				color: rgba(0, 0, 0, 0.8)
+				padding: 15px 15%
+				display: inline-block
+				border: 1px solid rgba(0, 0, 0, 0.8)
+				border-radius: 9px
+				transition: all 0.2s ease-in-out
+				font:
+					size: 18px
+					weight:	300
+					
+				&:hover
+					color: white
+					background: black
+					border-color: black
