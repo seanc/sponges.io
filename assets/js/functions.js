@@ -1,12 +1,8 @@
 $(function() {
   smoothScroll(300);
   mobileNav();
-<<<<<<< HEAD
-  $().loadRepositories('sponges');
-=======
   modalOpen();
   modalClose();
->>>>>>> master
 });
 
 
