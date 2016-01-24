@@ -1,8 +1,8 @@
 mixin nav-content()
 	ul
-		li: a(href="/services") Services
-		li: a(href="#projects") Projects
-		li: a(href="#contact") Contact
+		li: a(href="") Services
+		li: a(href="../#projects") Projects
+		li: a(href="../#contact") Contact
 
 .mobile-nav
 	+nav-content()
@@ -10,7 +10,7 @@ mixin nav-content()
 header
 	.header-position
 		h1.logo
-			a sponges.io
+			a(href="../") sponges.io
 
 		nav.site-nav
 			+nav-content()
